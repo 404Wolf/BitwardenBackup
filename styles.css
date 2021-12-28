@@ -1,0 +1,71 @@
+.card {
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.type {
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgb(243, 243, 243);
+    float: left;
+    font-size: 23.5px;
+}
+
+.type-icon {
+    border-style: none;
+    margin: -19px;
+    margin-left: 8px;
+    margin-right: -5px;
+    margin-top: -5px; 
+    height: 30px;
+    width: 30px;
+    float: right;
+}
+
+.favicon {
+    border-radius: 12px;
+    filter: grayscale();
+    float: right;
+    width: 40px;
+    height: 40px;
+}
+
+.qrCode {
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 230px;
+    width: 230px;
+    float: right;
+    position: absolute;
+    right: 32px;
+    margin-top: 120px;
+}
+
+.container {
+    padding-top: 0px;
+    padding-left: 3px;
+}
+
+.spacer {
+    height: 50px;
+    margin-bottom: -50px
+}
+
+@media print {
+    .pagebreak { page-break-before: always; }
+    div {
+        break-inside: avoid;
+    }
+}
+
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+    border-width: 3px;
+    overflow-wrap: break-word !important;
+    line-height: 23px;
+}

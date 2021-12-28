@@ -1,0 +1,16 @@
+{
+    "colours": {
+        "outlines": {
+            "inner":[200, 200, 200],
+            "outer":[0, 0, 0]
+        },
+        "text": {
+            "main": [0, 0, 0],
+            "alt": [90, 90, 90],
+            "pwned":[170, 15, 15]
+        },
+        "misc":{
+            "qrCodeBackground":[255, 255, 255]
+        }
+    }
+}

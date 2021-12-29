@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Secrets
+export.json
+bitwarden.json
+bitwardenExport.json
+export
+bitwarden
+output.html
+qrCodes

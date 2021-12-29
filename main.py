@@ -36,6 +36,8 @@ logos = os.listdir("icons")
 export = json.load(open("export.json"))
 export = bitwarden.bitwarden(export) #, fetching=True
 
+# sections of links which are not relivent
+badSections = ("www", "about", "help", "security", "com", "net", "org",)
 
 def findLogo(uris: list) -> str:
     """
@@ -58,6 +60,12 @@ def findLogo(uris: list) -> str:
                     continue
                 for logo in logos:  # check to see if there is a logo for it
                     if service in logo:
+                        return logo  # return the logo file name
+        for uri in uris:
+            # for each section (which isn't in the badSections list)
+            for section in filter(lambda section: section not in badSections, uri.split(".")):
+                for logo in logos:  # check to see if there is a logo for it
+                    if section in logo:
                         return logo  # return the logo file name
     except TypeError:
         return
@@ -162,7 +170,7 @@ for index, item in tqdm(enumerate(export.items)):
 
     # if there are any uris, then put the first uri found for the item to the right side of the title
     if len(item.uris) > 0:
-        link = f"({urlparse(item.uris[0]).netloc})".replace("()", "")
+        link = f"({urlparse(item.uris[0]).path})".replace("()", "")
     else:
         link = ""
 

@@ -1,7 +1,7 @@
 # Bitwarden Backup Human-izer
 ## A program to convert a bitwarden json backup into sleek html
 
-## How to use:
+### How to use:
 1. Get the [official bitwarden desktop app](https://bitwarden.com/download/), in order to export your vault as a json file
 1. Open the bitwarden desktop app, and click `file > export vault`, making sure to choose `json` as the format.
 1. Once you reenter your master password, choose to download the json export in the same file directory as this project's `main.py`, and rename the export to `export.json`. You should be left with an **unencrypted** json file. When you are finished, you will want to delete this file and empty your trash.
@@ -9,12 +9,12 @@
 1. Open `output.html` in a web browser such as [chrome](https://www.google.com/chrome/), and print out the file, or save it as a pdf by clicking the `save as pdf` option under `printers`.
 1. Delete the `qrCodes` folder, `output.html` file, and `export.json` file when you are done, and **empty your trash**! If you use a utility such as google drive backup and sync, do not put these files in a folder that syncs. These files contain unencrypted sensitive data.
 
-## Use cases:
+### Use cases:
 - Printing out the backup 
 - Storing as a backup on a hard drive, in case bitwarden ever goes away in the future
 - Having access to your vault without needing a device
 
-## Future plans:
+### Future plans:
 - Folder support (colour coding, or small tab on right side to indicate folder name)
 - Credit card image generation (for credit card type items, generate a picture of a credit card with the user's info on it)
 - Automatic html to pdf conversion
@@ -22,11 +22,11 @@
 - Decrypt encrypted bitwarden json backups
 - Fix inaccurate/broken progress bar
 
-## Examples of html exports:
+### Examples of html exports:
 ![html output example](https://github.com/hair/bitwardenBackup/blob/main/demoImages/html.png?raw=true)
 ![printing out html output example](https://github.com/hair/bitwardenBackup/blob/main/demoImages/printing.png?raw=true)
 
-## Other images:
+### Other images:
 ![exporting a bitwarden vault](https://github.com/hair/bitwardenBackup/blob/main/demoImages/exportMenu.png?raw=true)
 ![the popup to export a bitwarden vault](https://github.com/hair/bitwardenBackup/blob/main/demoImages/exportPopup.png?raw=true)
 ![json export example](https://github.com/hair/bitwardenBackup/blob/main/demoImages/json.png?raw=true)

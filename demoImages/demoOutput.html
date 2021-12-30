@@ -1,0 +1,375 @@
+
+<style>
+    #main-card {
+    min-height: 365px;
+    }
+
+    #type-box {
+        padding: 8px;
+        margin-right: 20px;
+    }
+
+    #header-box{
+        padding: 20px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-bottom: -5px;
+    }
+
+    #fields-box {
+        margin-right: 260px;
+    }
+
+    #login-box {
+        margin-right: 260px;
+        margin-bottom: 20px;
+    }
+
+    #notes-box {
+        margin-top: 18px;
+        margin-left: 8px;
+    }
+
+    #link {
+        float: right;
+        margin-top: -15px;
+        margin-right: 20px;
+        font-size: 18px;
+    }
+
+    .card {
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        border-radius: 10px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .type {
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        border-radius: 10px;
+        background-color: rgb(243, 243, 243);
+        float: left;
+        font-size: 23.5px;
+    }
+
+    .type-icon {
+        border-style: none;
+        margin: -19px;
+        margin-left: 8px;
+        margin-right: -5px;
+        margin-top: -5px; 
+        height: 30px;
+        width: 30px;
+        float: right;
+    }
+
+    .favicon {
+        border-radius: 12px;
+        filter: grayscale();
+        float: right;
+        width: 40px;
+        height: 40px;
+    }
+
+    .qrCode {
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        border-radius: 10px;
+        height: 230px;
+        width: 230px;
+        float: right;
+        position: absolute;
+        right: 32px;
+        margin-top: 120px;
+    }
+
+    .container {
+        padding-top: 0px;
+        padding-left: 3px;
+    }
+
+    .spacer {
+        height: 50px;
+        margin-bottom: -50px
+    }
+
+    @media print {
+        .pagebreak { page-break-before: always; }
+        div {
+            break-inside: avoid;
+        }
+    }
+
+    * {
+        font-family: 'Trebuchet MS', sans-serif;
+        border-width: 3px;
+        overflow-wrap: break-word !important;
+        line-height: 23px;
+    }
+</style>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css"></link>
+        <link rel="stylesheet" type="text/css" href="items.css"></link>
+        <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/bitwarden/brand/f09f2fa594c8a020c315296074f18ce0a7b3f171/icons/icon.svg">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/bitwarden/brand/f09f2fa594c8a020c315296074f18ce0a7b3f171/icons/icon.svg">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/bitwarden/brand/f09f2fa594c8a020c315296074f18ce0a7b3f171/icons/icon.svg">
+        <link rel="manifest" href="https://raw.githubusercontent.com/bitwarden/brand/f09f2fa594c8a020c315296074f18ce0a7b3f171/icons/icon.svg">
+        <link rel="mask-icon" href="https://raw.githubusercontent.com/bitwarden/brand/f09f2fa594c8a020c315296074f18ce0a7b3f171/icons/icon.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#2d89ef">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+
+        <div class="card" id="main-card">
+            <img class="qrCode" style="background-color: rgb(255, 255, 255);" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Totally_not_a_Rickroll_QR_code.png" alt="QR Code for item">
+            <div class="container">
+                <div class="card" style="border-color: rgb(200, 200, 200)" id="header-box">
+                    <h4>
+                        <img class="favicon" alt="favicon" src="https://raw.githubusercontent.com/hair/bitwardenBackup/159dbe66bb0f5f1a4e1b3801f688d6e798c52d12/icons/instagram.svg">
+                        <span class="type" style="border-color: rgb(0, 0, 0)" id="type-box">
+                            <img class="type-icon" alt="Type of item" src="https://raw.githubusercontent.com/hair/bitwardenBackup/159dbe66bb0f5f1a4e1b3801f688d6e798c52d12/assets/login.svg">
+                            Login
+                        </span>
+                        <span>
+                            <b style="font-size: 20px">
+                                An Account
+                            </b>
+                        </span>
+                        <br>
+                        <span>
+                            <i style="color: rgb(90, 90, 90); font-size: 14px">
+                                0123456789abcdefghijklmnopqrstuvwxyza
+                            </i>
+                        </span>
+                        <span style="color: rgb(90, 90, 90)" id="link">
+                            (instagram.com)
+                        </span>
+                    </h4>
+                </div>
+                <div style="margin:25px"></div>
+                <h4 class="card" style="border-color: rgb(200, 200, 200)" id="login-box">
+                        Username:
+                        <span style="color: rgb(90, 90, 90)">
+                            Username of account
+                        </span>
+                        <br>
+                        Password: 
+                        <span style="color: rgb(90, 90, 90)">
+                            thisIsAPassword
+                        </span>
+                        <span style="color: rgb(90, 90, 90)">
+                            <i style="color: rgb(90, 90, 90)">
+                                
+                            </i>
+                        </span>
+                </h4>
+                <h4 style="border-color: rgb(200, 200, 200)"><h4 class="card" style="border-color: rgb(200, 200, 200)" id="fields-box">
+                Name:
+                    <span style="color: rgb(90, 90, 90)">
+                        First Last
+                    </span><br>
+                Creation IP:
+                    <span style="color: rgb(90, 90, 90)">
+                        0.0.0.0
+                    </span><br>
+                DOB:
+                    <span style="color: rgb(90, 90, 90)">
+                        Month Day, Year
+                    </span><br>
+                Important Note:
+                    <span style="color: rgb(90, 90, 90)">
+                        stuff
+                    </span><br>
+                TID:
+                    <span style="color: rgb(90, 90, 90)">
+                        transactionIdHere
+                    </span><br>
+                Recovery Email:
+                    <span style="color: rgb(90, 90, 90)">
+                        ...
+                    </span><br>
+                Recovery Code:
+                    <span style="color: rgb(90, 90, 90)">
+                        transactionIdHere
+                    </span><br></h4></div>
+                
+            <h4 class="card" style="border-color: rgb(200, 200, 200); margin-right: 260px" id="notes-box">
+                Notes:  <span style="color: rgb(90, 90, 90)"> This is an example of a note </span>
+            </h4>
+            </div>
+        </div>
+        <div style="margin:15px"></div>
+        <div class="card" id="main-card">
+            <img class="qrCode" style="background-color: rgb(255, 255, 255);" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Totally_not_a_Rickroll_QR_code.png" alt="QR Code for item">
+            <div class="container">
+                <div class="card" style="border-color: rgb(200, 200, 200)" id="header-box">
+                    <h4>
+                        <img class="favicon" alt="favicon" src="https://raw.githubusercontent.com/hair/bitwardenBackup/159dbe66bb0f5f1a4e1b3801f688d6e798c52d12/icons/google.svg">
+                        <span class="type" style="border-color: rgb(0, 0, 0)" id="type-box">
+                            <img class="type-icon" alt="Type of item" src="https://raw.githubusercontent.com/hair/bitwardenBackup/159dbe66bb0f5f1a4e1b3801f688d6e798c52d12/assets/login.svg">
+                            Login
+                        </span>
+                        <span>
+                            <b style="font-size: 20px">
+                                An Account
+                            </b>
+                        </span>
+                        <br>
+                        <span>
+                            <i style="color: rgb(90, 90, 90); font-size: 14px">
+                                0123456789abcdefghijklmnopqrstuvwxyzc
+                            </i>
+                        </span>
+                        <span style="color: rgb(90, 90, 90)" id="link">
+                            (google.com)
+                        </span>
+                    </h4>
+                </div>
+                <div style="margin:25px"></div>
+                <h4 class="card" style="border-color: rgb(200, 200, 200)" id="login-box">
+                        Username:
+                        <span style="color: rgb(90, 90, 90)">
+                            13q
+                        </span>
+                        <br>
+                        Password: 
+                        <span style="color: rgb(90, 90, 90)">
+                            thisIsAPassword
+                        </span>
+                        <span style="color: rgb(90, 90, 90)">
+                            <i style="color: rgb(90, 90, 90)">
+                                
+                            </i>
+                        </span>
+                </h4>
+                <h4 style="border-color: rgb(200, 200, 200)"><h4 class="card" style="border-color: rgb(200, 200, 200)" id="fields-box">
+                Name:
+                    <span style="color: rgb(90, 90, 90)">
+                        John Smith
+                    </span><br>
+                Creation IP:
+                    <span style="color: rgb(90, 90, 90)">
+                        0.0.0.0
+                    </span><br>
+                DOB:
+                    <span style="color: rgb(90, 90, 90)">
+                        Month Day, Year
+                    </span><br>
+                Important Note:
+                    <span style="color: rgb(90, 90, 90)">
+                        stuff
+                    </span><br>
+                TID:
+                    <span style="color: rgb(90, 90, 90)">
+                        transactionIdHere
+                    </span><br>
+                Created At:
+                    <span style="color: rgb(90, 90, 90)">
+                        d/m/y
+                    </span><br>
+                Name Set At:
+                    <span style="color: rgb(90, 90, 90)">
+                        None
+                    </span><br>
+                Recovery Email:
+                    <span style="color: rgb(90, 90, 90)">
+                        microsoft@gmail.com
+                    </span><br>
+                Recovery Code:
+                    <span style="color: rgb(90, 90, 90)">
+                        recoverCode
+                    </span><br></h4></div>
+                
+            </div>
+        </div>
+        <div style="margin:15px"></div>
+        <div class="card" id="main-card">
+            <img class="qrCode" style="background-color: rgb(255, 255, 255);" src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Totally_not_a_Rickroll_QR_code.png" alt="QR Code for item">
+            <div class="container">
+                <div class="card" style="border-color: rgb(200, 200, 200)" id="header-box">
+                    <h4>
+                        <img class="favicon" alt="favicon" src="https://raw.githubusercontent.com/hair/bitwardenBackup/159dbe66bb0f5f1a4e1b3801f688d6e798c52d12/icons/facebook.svg">
+                        <span class="type" style="border-color: rgb(0, 0, 0)" id="type-box">
+                            <img class="type-icon" alt="Type of item" src="https://raw.githubusercontent.com/hair/bitwardenBackup/159dbe66bb0f5f1a4e1b3801f688d6e798c52d12/assets/login.svg">
+                            Login
+                        </span>
+                        <span>
+                            <b style="font-size: 20px">
+                                An Account
+                            </b>
+                        </span>
+                        <br>
+                        <span>
+                            <i style="color: rgb(90, 90, 90); font-size: 14px">
+                                0123456789abcdefghijklmnopqrstuvwxyze
+                            </i>
+                        </span>
+                        <span style="color: rgb(90, 90, 90)" id="link">
+                            (facebook.com)
+                        </span>
+                    </h4>
+                </div>
+                <div style="margin:25px"></div>
+                <h4 class="card" style="border-color: rgb(200, 200, 200)" id="login-box">
+                        Username:
+                        <span style="color: rgb(90, 90, 90)">
+                            null
+                        </span>
+                        <br>
+                        Password: 
+                        <span style="color: rgb(90, 90, 90)">
+                            thisIsAPassword
+                        </span>
+                        <span style="color: rgb(90, 90, 90)">
+                            <i style="color: rgb(90, 90, 90)">
+                                
+                            </i>
+                        </span>
+                </h4>
+                <h4 style="border-color: rgb(200, 200, 200)"><h4 class="card" style="border-color: rgb(200, 200, 200)" id="fields-box">
+                Name:
+                    <span style="color: rgb(90, 90, 90)">
+                        first last
+                    </span><br>
+                Creation IP:
+                    <span style="color: rgb(90, 90, 90)">
+                        None
+                    </span><br>
+                DOB:
+                    <span style="color: rgb(90, 90, 90)">
+                        Month Day, Year
+                    </span><br>
+                Important Note:
+                    <span style="color: rgb(90, 90, 90)">
+                        stuff
+                    </span><br>
+                TID:
+                    <span style="color: rgb(90, 90, 90)">
+                        None
+                    </span><br>
+                Created At:
+                    <span style="color: rgb(90, 90, 90)">
+                        None
+                    </span><br>
+                Name Set At:
+                    <span style="color: rgb(90, 90, 90)">
+                        None
+                    </span><br>
+                Recovery Email:
+                    <span style="color: rgb(90, 90, 90)">
+                        None
+                    </span><br>
+                Recovery Code:
+                    <span style="color: rgb(90, 90, 90)">
+                        None
+                    </span><br></h4></div>
+                
+            </div>
+        </div>
+        <div style="margin:15px"></div>
+    </body>
+</html>

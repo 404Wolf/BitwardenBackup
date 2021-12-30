@@ -1,0 +1,261 @@
+{
+  "encrypted": false,
+  "folders": [
+    {
+      "id": "0123456789abcdefghijklmnopqrstuvwxyza",
+      "name": "folderA"
+    },
+    {
+      "id": "0123456789abcdefghijklmnopqrstuvwxyzb",
+      "name": "folderB"
+    },
+    {
+      "id": "0123456789abcdefghijklmnopqrstuvwxyzc",
+      "name": "folderC"
+    },
+    {
+      "id": "0123456789abcdefghijklmnopqrstuvwxyzd",
+      "name": "folderD"
+    },
+    {
+      "id": "0123456789abcdefghijklmnopqrstuvwxyze",
+      "name": "folderE"
+    }
+  ],
+  "items": [
+    {
+      "id": "0123456789abcdefghijklmnopqrstuvwxyza",
+      "organizationId": null,
+      "folderId": "0123456789abcdefghijklmnopqrstuvwxyzb",
+      "type": 1,
+      "reprompt": 0,
+      "name": "An Account",
+      "notes": "This is an example of a note",
+      "favorite": false,
+      "fields": [
+        {
+          "name": "Name",
+          "value": "First Last",
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "Creation IP",
+          "value": "0.0.0.0",
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "DOB",
+          "value": "Month Day, Year",
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "Important Note",
+          "value": "stuff",
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "TID",
+          "value": "transactionIdHere",
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "Recovery Email",
+          "value": "...",
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "Recovery Code",
+          "value": "transactionIdHere",
+          "type": 0,
+          "linkedId": null
+        }
+      ],
+      "login": {
+        "uris": [
+          {
+            "match": null,
+            "uri": "instagram.com"
+          },
+          {
+            "match": null,
+            "uri": "microsoft.com"
+          }
+        ],
+        "username": "Username of account",
+        "password": "thisIsAPassword",
+        "totp": null
+      },
+      "collectionIds": null
+    },
+    {
+      "id": "0123456789abcdefghijklmnopqrstuvwxyzc",
+      "organizationId": null,
+      "folderId": "0123456789abcdefghijklmnopqrstuvwxyzd",
+      "type": 1,
+      "reprompt": 0,
+      "name": "An Account",
+      "notes": null,
+      "favorite": false,
+      "fields": [
+        {
+          "name": "Name",
+          "value": "John Smith",
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "Creation IP",
+          "value": "0.0.0.0",
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "DOB",
+          "value": "Month Day, Year",
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "Important Note",
+          "value": "stuff",
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "TID",
+          "value": "transactionIdHere",
+          "type": 1,
+          "linkedId": null
+        },
+        {
+          "name": "Created At",
+          "value": "d/m/y",
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "Name Set At",
+          "value": null,
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "Recovery Email",
+          "value": "microsoft@gmail.com",
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "Recovery Code",
+          "value": "recoverCode",
+          "type": 1,
+          "linkedId": null
+        }
+      ],
+      "login": {
+        "uris": [
+          {
+            "match": null,
+            "uri": "google.com"
+          },
+          {
+            "match": null,
+            "uri": "google.com"
+          }
+        ],
+        "username": "13q",
+        "password": "thisIsAPassword",
+        "totp": null
+      },
+      "collectionIds": null
+    },
+    {
+      "id": "0123456789abcdefghijklmnopqrstuvwxyze",
+      "organizationId": null,
+      "folderId": "0123456789abcdefghijklmnopqrstuvwxyzf",
+      "type": 1,
+      "reprompt": 0,
+      "name": "An Account",
+      "notes": null,
+      "favorite": false,
+      "fields": [
+        {
+          "name": "Name",
+          "value": "first last",
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "Creation IP",
+          "value": null,
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "DOB",
+          "value": "Month Day, Year",
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "Important Note",
+          "value": "stuff",
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "TID",
+          "value": null,
+          "type": 1,
+          "linkedId": null
+        },
+        {
+          "name": "Created At",
+          "value": null,
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "Name Set At",
+          "value": null,
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "Recovery Email",
+          "value": null,
+          "type": 0,
+          "linkedId": null
+        },
+        {
+          "name": "Recovery Code",
+          "value": null,
+          "type": 1,
+          "linkedId": null
+        }
+      ],
+      "login": {
+        "uris": [
+          {
+            "match": null,
+            "uri": "facebook.com"
+          },
+          {
+            "match": null,
+            "uri": "facebook.com"
+          }
+        ],
+        "username": "null",
+        "password": "thisIsAPassword",
+        "totp": null
+      },
+      "collectionIds": null
+    }
+  ]
+}

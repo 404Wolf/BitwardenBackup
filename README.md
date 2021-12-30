@@ -15,6 +15,7 @@
 - Having access to your vault without needing a device
 
 ### Future plans:
+- TOTP 2FA QR code generation
 - Folder support (colour coding, or small tab on right side to indicate folder name)
 - Credit card image generation (for credit card type items, generate a picture of a credit card with the user's info on it)
 - Automatic html to pdf conversion
@@ -33,3 +34,5 @@
 
 ### Trying it out:
 If you just want to try out the script, you can find an example `export.json` and `output.html` file [here](https://github.com/hair/bitwardenBackup/tree/main/demoImages).
+
+### If you have any questions, contacts can be found at [techy.cc](https://www.techy.cc)

@@ -34,10 +34,19 @@ logos = os.listdir("icons")
 
 # load in the export, and then create a bitwarden class instance of it
 export = json.load(open("export.json"))
-export = bitwarden.bitwarden(export) #, fetching=True
+export = bitwarden.bitwarden(export)  # , fetching=True
 
 # sections of links which are not relivent
-badSections = ("www", "about", "help", "security", "com", "net", "org",)
+badSections = (
+    "www",
+    "about",
+    "help",
+    "security",
+    "com",
+    "net",
+    "org",
+)
+
 
 def findLogo(uris: list) -> str:
     """
@@ -53,7 +62,8 @@ def findLogo(uris: list) -> str:
     try:
         for uri in uris:
             services = (
-                urlparse(uri).netloc.replace("www", "").split(".")
+                urlparse(uri).netloc.replace("www", "").split("."),
+                urlparse(uri).path.split("."),
             )  # attempt to parse the url to find the company name
             for service in services[1:]:
                 if len(service) <= 4:  # most company names are >4 characters
@@ -63,7 +73,9 @@ def findLogo(uris: list) -> str:
                         return logo  # return the logo file name
         for uri in uris:
             # for each section (which isn't in the badSections list)
-            for section in filter(lambda section: section not in badSections, uri.split(".")):
+            for section in filter(
+                lambda section: section not in badSections, uri.split(".")
+            ):
                 for logo in logos:  # check to see if there is a logo for it
                     if section in logo:
                         return logo  # return the logo file name
@@ -108,16 +120,18 @@ for index, item in tqdm(enumerate(export.items)):
     # if a favicon was retreived for the item, use it
     if item.favicon != None:
         favicon = item.favicon
-    else: #  if no favicons were found for the item, use the unknown icon
+    else:  #  if no favicons were found for the item, use the unknown icon
         favicon = "assets/unknown.svg"
 
     # attempt to find a hand crafted logo
     logo = findLogo(item.uris)
-    if logo != None: #  stick to the previously set favicon if none found
+    if logo != None:  #  stick to the previously set favicon if none found
         favicon = f"icons/{logo}"
 
     # if there are fields for the item, generate a block for them
-    notesRightMargin = "20px"  # if there is not a field block then the notes are below the qr code
+    notesRightMargin = (
+        "20px"  # if there is not a field block then the notes are below the qr code
+    )
     fieldsHtml = f"""<h4 style="border-color: rgb{tuple(config["colours"]["outlines"]["inner"])}">"""
     if (item.fields != None) or (item.type in ("card", "identity")):
         fields = []
@@ -131,9 +145,14 @@ for index, item in tqdm(enumerate(export.items)):
             fields += item.identity.items()
 
         if item.totp != None:
-            fields.append(("TOTP", item.totp,))
+            fields.append(
+                (
+                    "TOTP",
+                    item.totp,
+                )
+            )
 
-        qrString.append(tuple(fields)) #  update the qr code string
+        qrString.append(tuple(fields))  #  update the qr code string
 
         # append each field to the fieldsHtml string
         fieldsHtml += f"""<h4 class="card" style="border-color: rgb{tuple(config["colours"]["outlines"]["inner"])}" id="fields-box">"""
@@ -145,11 +164,13 @@ for index, item in tqdm(enumerate(export.items)):
                     </span><br>"""
 
         if len(tuple(item.fields)) < 5:
-            notesRightMargin = "260px"  # if there are a lot of fields, the notes are below the qr code
-        fieldsHtml += "</h4>" #  close the fields block
+            notesRightMargin = (
+                "260px"  # if there are a lot of fields, the notes are below the qr code
+            )
+        fieldsHtml += "</h4>"  #  close the fields block
     else:
-        fieldsHtml = "" #  there are no fields
-        notesRightMargin = "260px"  # since there are no fields, the notes are to the left of the qr code 
+        fieldsHtml = ""  #  there are no fields
+        notesRightMargin = "260px"  # since there are no fields, the notes are to the left of the qr code
     fieldsHtml += "</div>"
 
     # if there are notes for the item, generate a block for them

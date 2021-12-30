@@ -3,15 +3,11 @@
 
 ## How to use:
 1. Get the [official bitwarden desktop app](https://bitwarden.com/download/), in order to export your vault as a json file
-1. Open the bitwarden desktop app, and click `file > export vault`, making sure to choose `json` as the format. ![exporting a bitwarden vault](https://github.com/hair/bitwardenBackup/blob/main/demoImages/exportMenu.png?raw=true) ![the popup to export a bitwarden vault](https://github.com/hair/bitwardenBackup/blob/main/demoImages/exportPopup.png?raw=true)
-1. Once you reenter your master password, choose to download the json export in the same file directory as this project's `main.py`, and rename the export to `export.json`. You should be left with an **unencrypted** json file. When you are finished, you will want to delete this file and empty your trash. ![json export example](https://github.com/hair/bitwardenBackup/blob/main/demoImages/json.png?raw=true)
+1. Open the bitwarden desktop app, and click `file > export vault`, making sure to choose `json` as the format.
+1. Once you reenter your master password, choose to download the json export in the same file directory as this project's `main.py`, and rename the export to `export.json`. You should be left with an **unencrypted** json file. When you are finished, you will want to delete this file and empty your trash.
 1. Open console, and run `main.py` by entering `python main.py`, or `python3 main.py`, depending on your operating system. If you get a `ModuleNotFound` error, type `pip install <name of module that was not found>`. Depending on how many items are in your vault, this process can take a considerable amount of time (sometimes minutes).
 1. Open `output.html` in a web browser such as [chrome](https://www.google.com/chrome/), and print out the file, or save it as a pdf by clicking the `save as pdf` option under `printers`.
 1. Delete the `qrCodes` folder, `output.html` file, and `export.json` file when you are done, and **empty your trash**! If you use a utility such as google drive backup and sync, do not put these files in a folder that syncs. These files contain unencrypted sensitive data.
-
-## Examples of html exports:
-![html output example](https://github.com/hair/bitwardenBackup/blob/main/demoImages/html.png?raw=true)
-![printing out html output example](https://github.com/hair/bitwardenBackup/blob/main/demoImages/printing.png?raw=true)
 
 ## Use cases:
 - Printing out the backup 
@@ -25,3 +21,12 @@
 - Mark/save where the user has printed up to, so they can only print new content
 - Decrypt encrypted bitwarden json backups
 - Fix inaccurate/broken progress bar
+
+## Examples of html exports:
+![html output example](https://github.com/hair/bitwardenBackup/blob/main/demoImages/html.png?raw=true)
+![printing out html output example](https://github.com/hair/bitwardenBackup/blob/main/demoImages/printing.png?raw=true)
+
+## Other images:
+![exporting a bitwarden vault](https://github.com/hair/bitwardenBackup/blob/main/demoImages/exportMenu.png?raw=true)
+![the popup to export a bitwarden vault](https://github.com/hair/bitwardenBackup/blob/main/demoImages/exportPopup.png?raw=true)
+![json export example](https://github.com/hair/bitwardenBackup/blob/main/demoImages/json.png?raw=true)

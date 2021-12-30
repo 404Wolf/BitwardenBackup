@@ -30,3 +30,6 @@
 ![exporting a bitwarden vault](https://github.com/hair/bitwardenBackup/blob/main/demoImages/exportMenu.png?raw=true)
 ![the popup to export a bitwarden vault](https://github.com/hair/bitwardenBackup/blob/main/demoImages/exportPopup.png?raw=true)
 ![json export example](https://github.com/hair/bitwardenBackup/blob/main/demoImages/json.png?raw=true)
+
+### Trying it out:
+If you just want to try out the script, you can find an example `export.json` and `output.html` file [here](https://github.com/hair/bitwardenBackup/tree/main/demoImages).

@@ -6,7 +6,6 @@ import bitwarden
 import pyqrcode
 from urllib.parse import urlparse
 import threading
-from tqdm import tqdm
 
 """
 Bitwarden Vault to HTML Converter
@@ -113,7 +112,7 @@ html = """
 """
 
 print("Generating html...")
-for index, item in tqdm(enumerate(export.items)):
+for index, item in enumerate(export.items):
     qrString = [item.name, item.username, item.password]
 
     # if a favicon was retreived for the item, use it

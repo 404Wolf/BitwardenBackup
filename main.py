@@ -85,10 +85,9 @@ def findLogo(uris: list) -> str:
 
 def qrCodeGen(string: str, path, scale=4):
     """Generate and save a qr code"""
-    # 1) convert list of things needed to generate qr code into string
-    # 2) remove bad unicode characters; qr codes only support latin-1 characters
-    # 3) generate the qr code
-    # 4) save it as an svg file in qrCodes/<item-id>
+    # 1) remove bad unicode characters; qr codes only support latin-1 characters
+    # 2) generate the qr code
+    # 3) save it as an svg file in qrCodes/<item-id>
     string = string.encode("latin-1", "ignore").decode("latin-1")
     qr = pyqrcode.create(string[1:-1].replace("None", "null"))
     qr.svg(path, scale=scale)

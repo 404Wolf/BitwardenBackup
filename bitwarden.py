@@ -6,7 +6,6 @@ import aiohttp
 from contextlib import suppress
 import random
 import json
-from tqdm import tqdm
 
 
 agents = json.load(open("agents.json"))
@@ -228,7 +227,7 @@ class bitwarden:
             # create task for fetching favicon/checking if password is pwned for each item
 
             print("Fetching favicons and checking passwords against haveibeenpwned api")
-            for item in tqdm(self.items):
+            for item in self.items:
                 item.favicon = asyncio.create_task(favicon(item.uris))
                 tasks.append(item.favicon)
 

@@ -24,15 +24,15 @@
 - Fix inaccurate/broken progress bar
 
 ### Examples of html exports:
-![html output example](https://github.com/hair/bitwardenBackup/blob/main/demoImages/html.png?raw=true)
-![printing out html output example](https://github.com/hair/bitwardenBackup/blob/main/demoImages/printing.png?raw=true)
+![html output example](https://gitlab.com/bread/BitwardenBackup/-/raw/ebc03d4d2ac5d7cc1be0ffb58c076856a497e416/demoImages/html.png)
+![printing out html output example](https://gitlab.com/bread/BitwardenBackup/-/raw/ebc03d4d2ac5d7cc1be0ffb58c076856a497e416/demoImages/printing.png)
 
 ### Other images:
-![exporting a bitwarden vault](https://github.com/hair/bitwardenBackup/blob/main/demoImages/exportMenu.png?raw=true)
-![the popup to export a bitwarden vault](https://github.com/hair/bitwardenBackup/blob/main/demoImages/exportPopup.png?raw=true)
-![json export example](https://github.com/hair/bitwardenBackup/blob/main/demoImages/json.png?raw=true)
+![exporting a bitwarden vault](https://gitlab.com/bread/BitwardenBackup/-/raw/ebc03d4d2ac5d7cc1be0ffb58c076856a497e416/demoImages/exportMenu.png)
+![the popup to export a bitwarden vault](https://gitlab.com/bread/BitwardenBackup/-/raw/ebc03d4d2ac5d7cc1be0ffb58c076856a497e416/demoImages/exportPopup.png)
+![json export example](https://gitlab.com/bread/BitwardenBackup/-/raw/ebc03d4d2ac5d7cc1be0ffb58c076856a497e416/demoImages/json.png)
 
 ### Trying it out:
-If you just want to try out the script, you can find an example `export.json` and `output.html` file [here](https://github.com/hair/bitwardenBackup/tree/main/demoImages).
+If you just want to try out the script, you can find an example `export.json` and `output.html` file [here](https://gitlab.com/bread/BitwardenBackup/-/tree/main/demoImages).
 
 ### If you have any questions, contacts can be found at [techy.cc](https://www.techy.cc)

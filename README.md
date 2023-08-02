@@ -15,6 +15,7 @@
 - Having access to your vault without needing a device
 
 ### Future plans:
+- Rewrite with Jinja templating
 - TOTP 2FA QR code generation
 - Folder support (colour coding, or small tab on right side to indicate folder name)
 - Credit card image generation (for credit card type items, generate a picture of a credit card with the user's info on it)
@@ -22,15 +23,6 @@
 - Mark/save where the user has printed up to, so they can only print new content
 - Decrypt encrypted bitwarden json backups
 - Fix inaccurate/broken progress bar
-
-### Examples of html exports:
-![html output example](https://gitlab.com/bread/BitwardenBackup/-/raw/ebc03d4d2ac5d7cc1be0ffb58c076856a497e416/demoImages/html.png)
-![printing out html output example](https://gitlab.com/bread/BitwardenBackup/-/raw/ebc03d4d2ac5d7cc1be0ffb58c076856a497e416/demoImages/printing.png)
-
-### Other images:
-![exporting a bitwarden vault](https://gitlab.com/bread/BitwardenBackup/-/raw/ebc03d4d2ac5d7cc1be0ffb58c076856a497e416/demoImages/exportMenu.png)
-![the popup to export a bitwarden vault](https://gitlab.com/bread/BitwardenBackup/-/raw/ebc03d4d2ac5d7cc1be0ffb58c076856a497e416/demoImages/exportPopup.png)
-![json export example](https://gitlab.com/bread/BitwardenBackup/-/raw/ebc03d4d2ac5d7cc1be0ffb58c076856a497e416/demoImages/json.png)
 
 ### Trying it out:
 If you just want to try out the script, you can find an example `export.json` and `output.html` file [here](https://gitlab.com/bread/BitwardenBackup/-/tree/main/demoImages).
